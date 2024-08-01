@@ -10,7 +10,7 @@ import (
 func handleHello(w http.ResponseWriter, r *http.Request) {
 	name := r.URL.Query().Get("name")
 	if name == "" {
-		name = "World"
+		name = "People!!"
 	}
 	fmt.Fprintf(w, "Hello %s!.You are AWESOME!!!", name)
 }
